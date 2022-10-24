@@ -1,0 +1,6 @@
+<?php
+$a = [['mang1', 'so thu tu 1', 'gia tri 1'],
+    ['mang2',' so thu 2', 'gia tri 2'],
+    ['mang3', 'so thu 3', 'gia tri 3']];
+    print_r($a);
+?>
