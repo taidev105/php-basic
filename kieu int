@@ -1,0 +1,7 @@
+<?php
+$a = 1234; // hệ số thập phân
+$a = -123; // số âm
+$a = 0123; // Bát phân
+$a = 0x1A; // Hệ thập lục
+$a = 0b11111111; // Hệ nhị phân
+?>
