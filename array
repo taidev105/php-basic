@@ -23,3 +23,16 @@ $array = array('giá trị 1', 'giá trị 2');
 <?php
 $array = ['giá trị 1', 'giá trị 2'];
 ?>
+
+<?php
+$ten = array('Tài', 'Tuấn', 'Hà');
+print_r($ten);
+?>
+
+<?php
+$ten = array('Tài', 'Tuấn', 'Hà');
+// khởi tạo mảng
+echo $ten[0]; //Tài
+echo $ten[1]; //Tuấn
+echo $ten[2]; // Hà
+?>
