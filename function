@@ -1,0 +1,93 @@
+Cấu trúc hàm
+function tenHam($param)
+{
+    // code 
+}
+
+function tinhTong($a,$b)
+{
+    return $a + $b;
+}
+
+function tenham($thamso = 'giatri')
+{
+
+}
+
+function readName($name = 'world')
+{
+    echo 'hello' . $name;
+}
+
+Gọi hàm
+tenHam();
+//hoặc
+tenHam($param);
+
+<?php
+//khởi tạo hàm readName và thiết lập tham số mặc định
+function readName($name = 'world')
+{
+    echo 'hello' . $name;
+}
+
+//gọi hàm không truyền tham số
+readName(); // kết quả: hello world
+//gọi hàm có truyền tham số
+readName('Tài'); //kết quả: hello Tài
+//khởi tạo biến a
+$a = 'Toidicode';
+//gọi hàm
+readName($a);//kết quả: hello toidicode
+?>
+
+Hàm với câu lệnh rẽ nhánh
+<?php
+//khởi tạo hàm checkNumber có tham số truyền vào và đồng thời xét tham số mặc định cho nó = 0
+function checkNumber($number = 0)
+{
+    // nếu số truyền vào lớn hơn 10
+    if ($number > 10) {
+        echo 'lớn hơn';
+    } // nếu số truyền vào nhỏ hơn 10
+    else {
+        echo 'nhỏ hơn hoặc bằng';
+    }
+}
+
+// gọi hàm
+//gọi hàm không truyền tham số
+checkNumber(); //kết quả nhỏ hơn hoặc bằng
+//gọi hàm có truyền tham số
+checkNumber(11);// kết quả lớn hơn
+
+
+Hàm với vòng lặp
+<?php
+//khởi tạo hàm loopNumber có tham số truyền vào và đồng thời xét tham số mặc định cho nó = 0
+function loopNumber($number = 0)
+{
+    for ($i = 0; $i <= $number; $i++) {
+        echo $i;
+    }
+}
+
+//gọi hàm
+//gọi hàm không truyền tham số
+loopNumber(); // kết quả: 0;
+// gọi hàm truyền tham số
+loopNumber(10); //kết quả: 012345678910
+
+Kiểm tra hàm đã tồn tại.
+function_exists('functionName');
+
+
+<?php
+if (!function_exists('loopNumber')) {
+    function loopNumber($number = 0)
+    {
+        for ($i = 0; $i <= $number; $i++) {
+            echo $i;
+        }
+    }
+}
