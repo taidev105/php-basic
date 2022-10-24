@@ -1,0 +1,10 @@
+<?php
+$a = 5;
+$b = 6;
+$result = ($a == $b); //False
+$result = ($a != $b); //True
+$result = ($a < $b); //True
+$result = ($a <= $b); //True
+$result = ($a > $b); //False
+$result = ($a >= $b); //False
+?>
