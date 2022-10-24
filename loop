@@ -1,0 +1,88 @@
+<?php
+for ($i = 0; $i <= 10; $i++) {
+    echo 'Tôi đang chạy đến số ' . $i . '<br/>';
+}
+?>
+
+<?php
+//Khởi tạo mảng có key tự tăng.
+$data = [
+    'A',
+    'B',
+    'C',
+    'D'
+];
+// Lặp cả key lẫn value của mảng
+foreach ($data as $key => $value) {
+    echo "Đây là phần tử có key = $key và có giá trị= $value <br/>";
+}
+// Tạo khoảng phân cách để dễ phân biệt
+echo "_________________________________________________________________ <br/>";
+// Lặp value của mảng
+foreach ($data as $value) {
+    echo "Giá trị phần tử= $value <br/>";
+}
+?>
+
+<?php
+for ($i = 0; $i <= 10; $i++) {
+    for ($j = $i; $j <= 10; $j++) {
+        echo "*";
+    }
+    echo "<br>";
+}
+?>
+
+<?php
+$data = [0 => 1, 1 => [3 => 4, 5 => 6]];
+foreach ($data as $val) {
+    if (is_array($val)) {
+        foreach ($val as $v) {
+            echo $v . "<br/>";
+        }
+    } else
+        echo $val . "<br>";
+}
+?>
+
+<?php
+$i = 0; // khởi tạo biến
+while ($i <= 10 /* điều kiện dừng*/) {
+    echo $i . "<br>"; // in ra số
+    $i++; //sau mỗi lần lặp biến $i tăng thêm 1 đơn vị
+}
+?>
+
+<?php
+$i = 0; //khởi tạo biến $i bằng 0
+do {
+    echo "$i <br>"; // thực hiện in ra $i hiện tại
+    $i++; // cộng thêm 1 đơn vị sau mỗi lần lặp
+} while ($i <= 10/* nếu $i mà lớn hơn 10 dừng vòng lặp*/);
+?>
+
+<?php
+$i = 0;
+while ($i <= 10) {
+    $j = $i;
+    while ($j <= 10) {
+        echo "*";
+        $j++;
+    }
+    echo "<br>";
+    $i++;
+}
+?>
+
+<?php
+$i = 0;
+do {
+    $j = $i;
+    do {
+        echo "*";
+        $j++;
+    } while ($j <= 10);
+    echo "<br>";
+    $i++;
+} while ($i <= 10);
+?>
