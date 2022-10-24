@@ -8,3 +8,11 @@ $result = ($a <= $b); //True
 $result = ($a > $b); //False
 $result = ($a >= $b); //False
 ?>
+
+<?php
+$a = 4;
+$b = 4;
+$result = ((($a + 7) == 4) && (5 == 0); //false
+$result = ((($a + 7) == 4) || (5 == 0); //false
+$result = ((($a + 7) == 4) ! (5 == 0);  //true
+?>
