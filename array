@@ -7,3 +7,19 @@ $a = [['mang1', 'so thu tu 1', 'gia tri 1'],
     
     Them moi phan tu hoac sua phan tu
     $TenMang['key'] = 'value';
+
+<?php
+$array = array();
+?>
+
+<?php
+$array = [];
+?>
+
+<?php
+$array = array('giá trị 1', 'giá trị 2');
+?>
+
+<?php
+$array = ['giá trị 1', 'giá trị 2'];
+?>
